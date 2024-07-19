@@ -19,7 +19,7 @@ The service consists of the following components:
 - Python 3.10 or latest
 - Docker
 - Streamlit
-- k6 (for load testing)
+- k6 (for load testing) for installation refer to this [k6 Docs](https://grafana.com/docs/k6/latest/)
 
 # K6 test Baseline Performance Metrics:
 1. Response Time:
