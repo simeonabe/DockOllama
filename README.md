@@ -49,3 +49,6 @@ kubectl get hpa ollama-hpa --watch
 
 In Docker Use docker build -t ollama-streamlit .  command to build the image.
 and docker run -p 8501:8501 ollama-streamlit to view app in [localhost](http://localhost:8501/)
+
+## Push ollama streamlit docker image
+gt clone to the cloud providers and deploy
