@@ -19,7 +19,22 @@ The service consists of the following components:
 - Python 3.10 or latest
 - Docker
 - Streamlit
+- requirements.txt
 - k6 (for load testing) for installation refer to this [k6 Docs](https://grafana.com/docs/k6/latest/)
+
+  
+##Testing with HPA
+Run your k6 load test again with the HPA in place. Monitor both the k6 output and the HPA status during the test.
+with this command k6 run load_test.js
+
+##HPA resource
+Target our Ollama deployment
+Maintain between 1 and 10 replicas
+Scale based on CPU utilization, targeting 50% average utilization
+
+To monitor the HPA:
+kubectl get hpa ollama-hpa --watch
+
 
 # K6 test Baseline Performance Metrics:
 1. Response Time:
@@ -28,3 +43,9 @@ The service consists of the following components:
    - 95th percentile: 1000ms
 2. Throughput: 100 requests/second
 3. Error Rate: 1.5%
+
+
+## Docker Local build 
+
+In Docker Use docker build -t ollama-streamlit .  command to build the image.
+and docker run -p 8501:8501 ollama-streamlit to view app in [localhost](http://localhost:8501/)
