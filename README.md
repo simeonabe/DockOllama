@@ -3,7 +3,7 @@
 # Ollama Streamlit Service
 
 ## Overview
-This project implements a Streamlit-based web interface for the Ollama language model service. It provides a user-friendly way to interact with various language models through a web browser.
+This project implements a Streamlit-based web interface for the Ollama language model service. It provides a user-friendly way to interact with language model through a web browser.
 
 ## Architecture
 The service consists of the following components:
@@ -12,7 +12,7 @@ The service consists of the following components:
 - Docker: Used for containerization
 - Kubernetes: For orchestration and scaling
 - AWS EKS: Managed Kubernetes service for deployment or
-- another cloud provider
+- another cloud provider i tried this [Render Cloud free](https://simeondockollama.onrender.com)
 
 
 ### Prerequisites
